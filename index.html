@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfolio personal y laboratorio técnico de Manuel Alejandro."
+    >
+
+    <title>Manuel Alejandro — Portfolio</title>
+
+
+    <!-- Prevent theme flash -->
+
+    <script>
+        (() => {
+            const savedTheme =
+                localStorage.getItem("theme");
+
+            const systemDark =
+                window.matchMedia(
+                    "(prefers-color-scheme: dark)"
+                ).matches;
+
+            const theme =
+                savedTheme ||
+                (systemDark ? "dark" : "light");
+
+            document.documentElement.dataset.theme =
+                theme;
+        })();
+    </script>
+
+
+    <!-- Styles -->
+
+    <link
+        rel="stylesheet"
+        href="css/main.css"
+    >
+
+
+    <!-- JavaScript -->
+
+    <script
+        type="module"
+        src="js/main.js"
+    ></script>
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <a
+                href="#inicio"
+                class="brand"
+            >
+                <span class="brand-mark">
+                    MA
+                </span>
+
+                <span class="brand-name">
+                    Manuel Alejandro
+                </span>
+            </a>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="#sobre-mi"
+                    class="nav-link"
+                >
+                    Sobre mí
+                </a>
+
+                <a
+                    href="#proyectos"
+                    class="nav-link"
+                >
+                    Proyectos
+                </a>
+
+                <a
+                    href="#conocimientos"
+                    class="nav-link"
+                >
+                    Conocimientos
+                </a>
+
+                <a
+                    href="#laboratorio"
+                    class="nav-link"
+                >
+                    Laboratorio
+                </a>
+
+
+                <button
+                    id="theme-toggle"
+                    class="theme-toggle"
+                    type="button"
+                    aria-label="Cambiar tema"
+                    aria-pressed="false"
+                >
+                    <span
+                        class="theme-icon"
+                        aria-hidden="true"
+                    >
+                        ☾
+                    </span>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section
+            id="inicio"
+            class="hero section"
+        >
+
+            <div class="container hero-content">
+
+                <p class="eyebrow">
+                    IT · Tecnología · Aprendizaje · Construcción
+                </p>
+
+
+                <h1>
+                    Sistemas estructurados de capacidades.
+                    <span>
+                        Soluciones prácticas para tus desafíos.
+                    </span>
+                </h1>
+
+
+                <p class="hero-description">
+                    Plataforma de experimentación y consulta técnica:
+                    estructurando el conocimiento de sistemas, industria
+                     y movilidad.
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a
+                        href="#proyectos"
+                        class="button button-primary"
+                    >
+                        Explorar proyectos
+                    </a>
+
+                    <a
+                        href="#laboratorio"
+                        class="button button-secondary"
+                    >
+                        Entrar al laboratorio
+                    </a>
+
+                </div>
+
+
+                <!-- Hero carousel -->
+
+                <div
+                    id="hero-carousel"
+                    class="carousel-container"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE MÍ -->
+
+        <section
+            id="sobre-mi"
+            class="section section-about"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        01 — Sobre mí
+                    </p>
+
+                    <h2>
+                        Trayectoria entre sistemas, 
+                        <span>
+                             hardware y reparación.
+                        </span>
+                    </h2>
+
+                </div>
+
+
+                <div class="bento-grid">
+
+                    <article class="card bento-large">
+
+                        <span class="card-label">
+                            Perfil
+                        </span>
+
+                        <h3>
+                            Técnico informático y de sistemas.
+                        </h3>
+
+                        <p>
+
+                            Me dedico a entender cómo funcionan las 
+                             cosas desde la raíz. Con una sólida 
+                            trayectoria en el mundo IT y la informática, 
+                            hoy combino esa base lógica con el trabajo 
+                            técnico directo, buscando siempre optimizar 
+                            equipos, sistemas y mi propio entorno de trabajo.
+                        </p>
+
+                        <div class="about-more-link">
+                        <a href="historia.html">Saber más sobre mi trayectoria →</a>
+</div>
+                    </article>
+
+
+                    <article class="card">
+
+                        <span class="card-label">
+                            IT
+                        </span>
+
+                        <h3>
+                            Mi base: Informática y Redes
+                        </h3>
+
+                        <p>
+                            Vengo del sector IT. Domino el hardware, las redes, 
+                            las bases de datos, los sistemas y el desarrollo de 
+                            software. Es el cimiento técnico sobre el que apoyo cada 
+                            proyecto que encaro.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <span class="card-label">
+                            Actual
+                        </span>
+
+                        <h3>
+                           Diagnóstico, taller y servicio técnico
+                        </h3>
+
+                        <p>
+                            Actualmente centrado en el diagnóstico de fallas eléctricas, la 
+                            reparación de equipos y la electrónica aplicada. Trabajo directamente 
+                            con las manos en la máquina, uniendo la lógica del software con 
+                            soluciones prácticas en el taller.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card bento-wide">
+
+                        <span class="card-label">
+                            Filosofía
+                        </span>
+
+                        <h3>
+                            Aprender → construir → romper →
+                            entender → mejorar.
+                        </h3>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">02 — Proyectos</p>
+
+                    <h2>
+                        Lo que estoy
+                        <span>construyendo.</span>
+                    </h2>
+                </div>
+
+
+                <article class="project-feature card">
+
+                    <div class="project-content">
+
+                        <span class="card-label">
+                            Proyecto principal
+                        </span>
+
+                        <h3>TécnicoLab</h3>
+
+                        <p>
+                            Una plataforma personal para organizar,
+                            estudiar y poner a prueba conocimientos
+                            técnicos: electricidad, informática,
+                            esquemas, mantenimiento y mucho más.
+                        </p>
+
+                        <a href="#" class="button button-primary">
+                            Ver proyecto
+                        </a>
+
+                    </div>
+
+                    <div class="project-visual">
+                        <span>TÉCNICO<br>LAB</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONOCIMIENTOS -->
+        <section id="conocimientos" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">03 — Conocimientos</p>
+
+                    <h2>
+                        Lo que sé,
+                        <span>lo que estoy aprendiendo.</span>
+                    </h2>
+                </div>
+
+
+                <div class="knowledge-grid">
+
+                    <article class="card">
+                        <span class="knowledge-number">01</span>
+                        <h3>Informática</h3>
+                        <p>
+                            Hardware, software, sistemas,
+                            redes y resolución de problemas.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="knowledge-number">02</span>
+                        <h3>Desarrollo</h3>
+                        <p>
+                            HTML, CSS, JavaScript,
+                            TypeScript y programación.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="knowledge-number">03</span>
+                        <h3>Electricidad</h3>
+                        <p>
+                            Fundamentos, componentes,
+                            medición y lectura de esquemas.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="knowledge-number">04</span>
+                        <h3>Otros</h3>
+                        <p>
+                            Formación y conocimientos
+                            adquiridos a lo largo del camino.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LABORATORIO -->
+        <section id="laboratorio" class="section section-lab">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">04 — Laboratorio</p>
+
+                    <h2>
+                        Aquí es donde
+                        <span>aprendo haciendo.</span>
+                    </h2>
+                </div>
+
+
+                <div class="lab-grid">
+
+                    <article class="card lab-card">
+                        <span class="lab-icon">⌘</span>
+                        <h3>Guías</h3>
+                        <p>
+                            Contenido técnico organizado
+                            a partir de lo que voy aprendiendo.
+                        </p>
+                    </article>
+
+                    <article class="card lab-card">
+                        <span class="lab-icon">?</span>
+                        <h3>Tests</h3>
+                        <p>
+                            Preguntas y ejercicios para
+                            comprobar conocimientos.
+                        </p>
+                    </article>
+
+                    <article class="card lab-card">
+                        <span class="lab-icon">↗</span>
+                        <h3>Progreso</h3>
+                        <p>
+                            Registrar qué sé, qué estoy
+                            aprendiendo y qué necesito practicar.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Manuel Alejandro
+            </p>
+
+            <p>
+                Construido paso a paso.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

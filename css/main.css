@@ -1,0 +1,91 @@
+@import url("./base/variables.css");
+@import url("./base/reset.css");
+@import url("./base/typography.css");
+
+@import url("./components/navbar.css");
+@import url("./components/buttons.css");
+@import url("./components/cards.css");
+
+@import url("./sections/hero.css");
+@import url("./sections/about.css");
+@import url("./sections/projects.css");
+@import url("./sections/knowledge.css");
+@import url("./sections/laboratory.css");
+
+
+/* ==============================
+   LAYOUT GLOBAL
+   ============================== */
+
+.container {
+    width: min(
+        calc(100% - 40px),
+        var(--container-width)
+    );
+
+    margin-inline: auto;
+}
+
+
+.section {
+    padding: 120px 0;
+}
+
+
+.section-heading {
+    margin-bottom: 60px;
+}
+
+
+.site-footer {
+    padding: 40px 0;
+
+    border-top: 1px solid var(--color-border);
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+
+@media (max-width: 700px) {
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+
+/* ==============================
+   ACCESIBILIDAD
+   ============================== */
+
+:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}

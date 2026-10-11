@@ -1,0 +1,55 @@
+.project-feature {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    min-height: 480px;
+
+    overflow: hidden;
+}
+
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.project-content p {
+    max-width: 520px;
+    margin: 20px 0 28px;
+}
+
+
+.project-visual {
+    display: grid;
+    place-items: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            var(--color-accent),
+            transparent 65%
+        );
+
+    background-color: var(--color-surface-soft);
+
+    font-size: clamp(3rem, 7vw, 7rem);
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: -0.08em;
+}
+
+
+@media (max-width: 800px) {
+
+    .project-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .project-visual {
+        min-height: 300px;
+    }
+}

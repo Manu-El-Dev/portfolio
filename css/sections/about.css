@@ -1,0 +1,32 @@
+.bento-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+.bento-large {
+    grid-row: span 2;
+}
+
+
+.bento-wide {
+    grid-column: span 2;
+}
+
+
+@media (max-width: 700px) {
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-large,
+    .bento-wide {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
